@@ -1,5 +1,5 @@
-import { AuthGuard } from './components/security/auth.guard';
-import { AuthInterceptor } from './components/security/auth.intercepetor';
+import { AuthGuard } from "./components/security/auth.guard";
+import { AuthInterceptor } from "./components/security/auth.intercepetor";
 import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
 import { SharedService } from "./services/shared.service";
 import { UserService } from "./services/user.service";
@@ -14,7 +14,7 @@ import { FooterComponent } from "./components/footer/footer.component";
 import { HomeComponent } from "./components/home/home.component";
 import { LoginComponent } from "./components/security/login/login.component";
 import { FormsModule } from "@angular/forms";
-import { UserNewComponent } from './components/user-new/user-new.component';
+import { UserNewComponent } from "./components/user-new/user-new.component";
 
 @NgModule({
   declarations: [
@@ -26,11 +26,7 @@ import { UserNewComponent } from './components/user-new/user-new.component';
     LoginComponent,
     UserNewComponent
   ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    FormsModule,
-    routes],
+  imports: [BrowserModule, HttpClientModule, FormsModule, routes],
   providers: [
     UserService,
     SharedService,
