@@ -1,3 +1,4 @@
+
 import { UserService } from "./../../services/user.service";
 import { SharedService } from "./../../services/shared.service";
 import { User } from "./../../model/user.model";
@@ -85,6 +86,7 @@ export class UserNewComponent implements OnInit {
       "has-error": isInvalid && isDirty,
       "has-success": !isInvalid && isDirty
     };
+
   }
 
 }
